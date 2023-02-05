@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Upcoming Ph.D. student in <a href='https://www.sta.cuhk.edu.hk/'>Department of Statistics, the Chinese University of Hong Kong </a>
 
@@ -15,7 +15,7 @@ profile:
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
 Hi, I'm Feng Jianting(*Chinese: 冯建霆*), an upcoming (2023 Fall) postgraduate student in the CUHK, my major interests lie in the field of **statistical machine learning**, **causal inference** and **explainable artificial intelligence**(XAI). Prior to this, I was an undergraduate student in the Beijing Institute of Technology, majoring in Mathematics and supervised by [Prof. Man Hongyin](https://math.bit.edu.cn/szdw/jgml/jsyxtkxx/mhy/index.htm).
