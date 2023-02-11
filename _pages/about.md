@@ -6,7 +6,7 @@ subtitle: Upcoming Ph.D. student in <a href='https://www.sta.cuhk.edu.hk/'>Depar
 
 profile:
   align: right
-  image: pic.jpeg
+  # image: pic.jpeg
   image_circular: true # crops the image to make it circular
   address: >
     <p>555 your office number</p>
@@ -18,8 +18,10 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-Hi, I'm Feng Jianting(*Chinese: 冯建霆*), an upcoming (2023 Fall) postgraduate student in the CUHK, my major interests lie in the field of **statistical machine learning**, **causal inference** and **explainable artificial intelligence**(XAI). Prior to this, I was an undergraduate student in the Beijing Institute of Technology, majoring in Mathematics and supervised by [Prof. Man Hongyin](https://math.bit.edu.cn/szdw/jgml/jsyxtkxx/mhy/index.htm).
+Hi, I'm Feng Jianting(Chinese: 冯建霆), a future postgraduate student at CUHK starting in the fall of 2023. 
 
-Apart from learning and writing, I enjoy contributing to the open source projects, and I am addicted to coffee, football ([ManCity](mancity.com)) and Formula 1.
+My areas of interest include statistical machine learning, causal inference, and explainable artificial intelligence (XAI). I obtained my undergraduate degree from the Beijing Institute of Technology, where I majored in Mathematics and was supervised by [Prof. Man Hongyin](https://math.bit.edu.cn/szdw/jgml/jsyxtkxx/mhy/index.htm).
 
-If you are interested in discussion with me, please send me a email to [📭gianting01@gmail.com](gianting01@gmail.com).
+In addition to academics, I have a passion for coding and contributing to open source projects and enjoy spending my free time with coffee and formula 1. If you'd like to connect and engage in discussions, feel free to email me at [📭gianting01@gmail.com](gianting01@gmail.com).
+
+Additional information, please refer my [resume](/assets/pdf/resume.pdf).
