@@ -6,7 +6,7 @@
     # - name: Date of Birth
     #   value: 14th March 1879
     - name: Languages
-      value: English, Chinese and Japanese
+      value: English, Chinese and Japanese（勉強します）
 
 - title: Education
   type: time_table
@@ -86,7 +86,7 @@
       # items: 
       #   - Description 1.
       #   - Description 2.
-    - title: Explainable Artificial Intelligence.
+    # - title: Explainable Artificial Intelligence.
     #   items:
     #     - Description 1.
     #     - Description 2.
