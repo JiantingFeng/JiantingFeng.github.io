@@ -20,8 +20,21 @@ social: false # includes social icons at the bottom of the page
 
 Hi, I'm Feng Jianting (Chinese: 冯建霆), a future postgraduate student at CUHK starting in the fall of 2023. 
 
-My areas of interest include statistical machine learning. I obtained my undergraduate degree from the **Beijing Institute of Technology**, where I majored in Mathematics and was supervised by [Prof. Man Hongyin](https://math.bit.edu.cn/szdw/jgml/jsyxtkxx/mhy/index.htm).
+I obtained my undergraduate degree from the **Beijing Institute of Technology**, where I majored in Mathematics and was supervised by [Prof. Man Hongyin](https://math.bit.edu.cn/szdw/jgml/jsyxtkxx/mhy/index.htm).
 
-In addition to academics, I have a passion for coding and contributing to open source projects and enjoy spending my free time with coffee and formula 1, I'm also a fan of [ManCity](https://mancity.com). If you'd like to connect and engage in discussions, feel free to email me at [📭gianting01@gmail.com](mailto:gianting01@gmail.com).
+#### Research Interest
+- Machine Learning
+    - Statistical Learning Theory
+    - Interpretable Machine Learning
 
-Additional information, please refer my [resume](/assets/pdf/resume.pdf).
+#### Hobbies
+- ☕️ Coffee
+- 🏁 Formula 1
+- ✈️ Traveling
+- 📸 Photography
+
+#### Contact me
+- 📭 [gianting01@gmail.com](mailto:gianting01@gmail.com).
+
+
+For additional information, please refer my [resume](/assets/pdf/resume.pdf).
