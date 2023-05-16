@@ -21,6 +21,7 @@ First we have following lemma,
 
 > Let $$(\mathcal X, d)$$ be a metric space, and $$p, q$$ be two Borel probability measures defined on $$\mathcal X$$ . Then $$p=q$$ if and only if $$\mathbb{E}_X[f(X)]=\mathbb{E}_Y[f(Y)]$$ for all $$f\in C(\mathcal X)$$ . Where $$C(\mathcal X)$$ denoted the space of bounded  continuous functions on $$\mathcal X$$.
 
+
 With the help of this lemma, we can turn our problem into an equivalent form:
 
 Let $$\mathcal F\in C(\mathcal X)$$, we define *maximal mean discrepancy* (MMD) as 
@@ -40,9 +41,32 @@ This empiricial formula seems intractable as well because of the $$\sup$$, howev
 
 ### Reproducing Kernel Hilbert Space (RKHS)
 
-Indeed, RKHS is a ubiquitus concept in the field of Machine Learning. In order to figure out what it is, firstly we need some knowledge from functional analysis.
+Indeed, RKHS is a ubiquitus concept in the field of Machine Learning. In order to figure out what it is, firstly we need some math foundations, I put some useful links here:
 
-- Recall the evaluation function in RKHS is bounded. By Riesz representation,  for all $$x\in\mathcal H$$ , $$\exists \phi(x)\in\mathcal H$$ , such that the evaluation $$f(x) = \langle f, \phi(x)\rangle_{\mathcal H}$$ . The feature map takes the form $$\phi(x) = k(x, \cdot)$$ where $$k(\cdot, \cdot)$$ is a kernel function defined as $$k(x, z) = \langle\phi(x), \phi(z)\rangle_{\mathcal{H}}$$
+- [Hilbert Space](https://mathworld.wolfram.com/HilbertSpace.html)
+- [Riesz Representation Theorem](https://www.wikiwand.com/en/Riesz_representation_theorem)
+- [Kernel Method](https://www.wikiwand.com/en/Kernel_method)
+
+The kernel function is a generalization of normal inner product in Euclidan space, with **non-negative, symmetry, and bilinearily**. 
+
+Given any two data points $$x, x^\prime \in \mathcal X$$, together with feature map $$\Phi: \mathcal X\to\mathcal F\subset \mathbb R^{N}$$, we can define a **kernel** $$K: \mathcal X\times \mathcal X\to \mathbb R$$ as:
+
+$$
+\forall x, x^\prime\in\mathcal X,\qquad K(x, x^\prime) = \langle \Phi(x), \Phi(x^\prime)\rangle = \Phi(x^\prime)^T\Phi(x)
+$$
+
+The reason why we use kernel function rather than original inner product is that: in many machine learning problems, inner product in feature space is extensively (e.g. support vector machine). Normally we don't use the original form $$\Phi(x)$$, which always appears in the form of inner product. 
+
+then, the Reproducing Kernel Hilbert space is a Hilbert space with **reproducing property**:
+
+$$
+	\forall h\in\ \mathcal H, \forall x\in\mathcal X,\qquad h(x) = \langle h, K(x, \cdot)\rangle.
+$$
+
+By the definition of kernel, partial evaluation $$K(x, \cdot)$$ is a function from $$\mathcal X$$ to $$\mathcal F$$
+therefore, from the perspective of function space, it can be viewed as the Riesz representation theorem.
+
+Recall the evaluation function in RKHS is bounded. By Riesz representation,  for all $$x\in\mathcal H$$ , $$\exists \phi(x)\in\mathcal H$$ , such that the evaluation $$f(x) = \langle f, \phi(x)\rangle_{\mathcal H}$$ . The feature map takes the form $$\phi(x) = k(x, \cdot)$$ where $$k(\cdot, \cdot)$$ is a kernel function defined as $$k(x, z) = \langle\phi(x), \phi(z)\rangle_{\mathcal{H}}$$
 - This notation can also be extended into expectation, i.e. $$\exists\mu\in\mathcal H$$ , $$\forall f\in \mathcal H$$ , we have $$\mathbb{E}f = \langle f, \mu\rangle_{\mathcal H}$$
 - We have
 	-
