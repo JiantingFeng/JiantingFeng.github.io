@@ -324,6 +324,16 @@ jekyll-diagrams:
     # configuration, see https://github.com/zhustec/jekyll-diagrams.
     # feel free to comment out this section if not using jekyll diagrams.
 
+# Jekyll admin
+jekyll_admin:
+  # hidden_links:
+  #   - posts
+  #   - pages
+  #   - staticfiles
+  #   - datafiles
+  #   - configuration
+  # homepage: "pages"
+
 
 # -----------------------------------------------------------------------------
 # Optional Features

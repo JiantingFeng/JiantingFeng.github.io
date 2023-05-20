@@ -1,13 +1,12 @@
 ---
-layout: post
 title: Maximum Mean Discrepancy and Reproduce Hilbert Space
-date: 2023-05-14
+layout: post
+date: '2023-05-14'
 description: Introduction of Maximum Mean Discrepancy
-categories: machine-learning
+categories:
+- machine-learning
 giscus_comments: true
 ---
-
-
 
 ## Intuition
 The concept of *Maximum Mean Discrepancy* is introduced in [gretton12a](https://www.jmlr.org/papers/volume13/gretton12a/gretton12a.pdf) to solve following question:
