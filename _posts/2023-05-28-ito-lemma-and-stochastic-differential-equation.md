@@ -2,10 +2,10 @@
 title: Ito Lemma and Stochastic Differential Equation
 layout: post
 categories:
-- probability
-- financial
+  - probability
+  - financial
 description: A brief introduction to stochastic differential equation and Ito lemma
-date: '2023-05-28 20:00:00'
+date: "2023-05-27 20:00:00"
 ---
 
 # Martingales in Discrete Time
@@ -20,10 +20,10 @@ $$
     \mathbb{E}\left[\mathbf Y\vert \mathbf X_1,  \cdots, \mathbf X_n\right]
 $$
 
-can be thought as the best guess given  $$\mathbf X_1, \cdots, \mathbf X_n$$. $$\mathcal{F}_n$$ represents the information contained in $$\mathbf X_1, \cdots, \mathbf X_n$$, and $$\mathcal{F}_0$$ contains no information. We have following property
+can be thought as the best guess given $$\mathbf X_1, \cdots, \mathbf X_n$$. $$\mathcal{F}_n$$ represents the information contained in $$\mathbf X_1, \cdots, \mathbf X_n$$, and $$\mathcal{F}_0$$ contains no information. We have following property
 
 1. If we have no information, then the best guess is the unconditional expectation, $$\mathbb{E}\left[\mathbf{Y}\vert \mathcal{F}_0\right] = \mathbb{E}\left[\mathbf{Y}\right] $$
-2. The conditional exepctation $$\mathbb{E}\left[\mathbf{Y}\vert \mathcal{F}_n\right]$$ should only contain the information up to time $$n$$, we say $$\mathbb{E}\left[\mathbf{Y}\vert \mathcal{F}_n\right]$$ is $$\mathcal{F}_n$$-measurable, i.e. 
+2. The conditional exepctation $$\mathbb{E}\left[\mathbf{Y}\vert \mathcal{F}_n\right]$$ should only contain the information up to time $$n$$, we say $$\mathbb{E}\left[\mathbf{Y}\vert \mathcal{F}_n\right]$$ is $$\mathcal{F}_n$$-measurable, i.e.
 
 $$
 	\mathbb{E}\left[\mathbf{Y}\vert \mathcal{F}_n\right] = \varphi(\mathbf{X}_1, \cdots, \mathbf{X}_n)
@@ -43,7 +43,7 @@ $$
 
 ## Martingales
 
-Martingale is a concept for modeling the fair game. Suppose $$\mathbf{X}_1, \mathbf{X}_2, \cdots$$ is a sequence of random variables associated with filtration $$\left\{\mathcal{F}n\right\}$$. A sequence of random variables $$\mathbf{M}0, \mathbf{M}1, \cdots$$ is called a *martingale* w.r.t. filtration $$\left\{\mathcal{F}n\right\}$$ if:
+Martingale is a concept for modeling the fair game. Suppose $$\mathbf{X}_1, \mathbf{X}_2, \cdots$$ is a sequence of random variables associated with filtration $$\left\{\mathcal{F}n\right\}$$. A sequence of random variables $$\mathbf{M}0, \mathbf{M}1, \cdots$$ is called a _martingale_ w.r.t. filtration $$\left\{\mathcal{F}n\right\}$$ if:
 
 1. For each $$n$$, $$\mathbf{M}_n$$ is $$\mathcal{F}_n$$ measurable with $$\mathbb{E}\left[\lvert \mathbf{M}_n\rvert\right]< \infty$$]
 2. If $$m > n$$, then
@@ -52,13 +52,13 @@ $$
 	\mathbb{E}\left[\mathbf{M}_n\vert \mathcal{F}_m\right] = \mathbf{M}_m.
 $$
 
-We can also define a *submartingale* as
+We can also define a _submartingale_ as
 
 $$
 	\mathbb{E}\left[\mathbf{M}_n\vert \mathcal{F}_m\right] \leq \mathbf{M}_m
 $$
 
-and a *supermartingale*
+and a _supermartingale_
 
 $$
 	\mathbb{E}\left[\mathbf{M}_n\vert \mathcal{F}_m\right] \geq \mathbf{M}_m
@@ -66,9 +66,10 @@ $$
 
 Note: For all "fair" games you play in casino, they are always submartingale since you have to pay commission.
 
-
 # Brownian Motion
+
 ## Limits of sums of independent variables
+
 Suppose $$\mathbf{X}_1, \mathbf{X}_2,\cdots, \mathbf{X}_n$$ are i.i.d. random variables with mean $$\mu$$ and variance $$\sigma^2<\infty$$. Let
 
 $$
@@ -90,6 +91,7 @@ $$
 the proof of CLT can be easily derived by the characteristic function.
 
 ## Limits of random walks
+
 Brownian motion can be viewed as the limit of random walk as the time and space increments tends to zero. Suppose $$\mathbf{X}_1, \mathbf{X}_2, \cdots $$ are independent random variables with $$\mathbb{P}\left[\mathbf{X}_j = 1\right] = \mathbb{P}\left[\mathbf{X}_j = -1\right] = \dfrac{1}{2}$$ and let
 
 $$
@@ -116,13 +118,16 @@ $$
 	                               & = \left(\Delta x\right)^2\cdot N = 1                                       \\
 \end{align*}
 $$
+
 we get $$\Delta x = \dfrac{1}{\sqrt{N}}$$, note how we choose $$\Delta t$$, we deduce that
+
 $$
 	\Delta x = \sqrt{\Delta t}
 $$
 
 ## Brownian Motion
-*Brownian motion* or *Wiener process* is a model of continuous random process. Let $$B_t = B(t)$$ be the value at time $$t$$, $$B_t$$ is a random variable. A collection of random variable indexed by time is called a *stochastic process*.
+
+_Brownian motion_ or _Wiener process_ is a model of continuous random process. Let $$B_t = B(t)$$ be the value at time $$t$$, $$B_t$$ is a random variable. A collection of random variable indexed by time is called a _stochastic process_.
 
 There are three major assumptions about $$B_t$$
 
@@ -132,14 +137,14 @@ There are three major assumptions about $$B_t$$
 
 For convenience, we often set $$B_0 = 0$$.
 
-A stochastic process $$B_t$$ is called (one-dimensional) *Brownian motion* if it satisfies the following.
+A stochastic process $$B_t$$ is called (one-dimensional) _Brownian motion_ if it satisfies the following.
 
 1. $$B_0 = 0$$,
-2. For $$s < t$$, $$B_t - B_s \sim \mathcal{N}\left((t-s)m, (t-s)\sigma^2\right)$$ where $$m$$ is \textit{drift} and $$\sigma^2$$ is *variance*,
+2. For $$s < t$$, $$B_t - B_s \sim \mathcal{N}\left((t-s)m, (t-s)\sigma^2\right)$$ where $$m$$ is \textit{drift} and $$\sigma^2$$ is _variance_,
 3. If $$s < t$$, then $$B_t - B_s$$ is independent of $$B_r$$ if $$r < s$$,
 4. With probability $$1$$, the function $$t\mapsto B_t$$ is continuous.
 
-If $$m = 0$$ and $$\sigma^2 = 1$$, then $$B_t$$ is called *standard Brownian motion*.
+If $$m = 0$$ and $$\sigma^2 = 1$$, then $$B_t$$ is called _standard Brownian motion_.
 
 Recall the reparameterization trick of standard Gaussian, take $$B_t$$ as standard Brownian motion, then
 
@@ -150,20 +155,23 @@ $$
 is a Brownian motion with drift $$m$$ and variance $$\sigma^2$$.
 
 # Ito Integral
+
 ## Ito Process
 
-Let $$W_t$$ denote the standard Brownian motion, we define the *Ito process* as following
+Let $$W_t$$ denote the standard Brownian motion, we define the _Ito process_ as following
 
-Let $$X_t$$ be a stochastic process, $$X_t$$ is called an *Ito process*  if it satisfies the following stochastic differential equation,
-	$$
+Let $$X_t$$ be a stochastic process, $$X_t$$ is called an _Ito process_ if it satisfies the following stochastic differential equation,
+
+$$
 		\mathrm{d} X_t = \underbrace{\mu\left(t, X_t\right) \mathrm{d} t}_{\text{drifting term}} + \underbrace{\sigma\left(t, X_t\right) \mathrm{d} W_t}_{\text{diffusion term}}
-	$$
-	
+
+$$
+
 where $$\mu$$ and $$\sigma$$ are functions of $$t$$ and $$X_t$$.
-	
 Remembering the definition of Riemann integral, we can not integrate the stochastic differential equation directly. We need to define a new integral to solve the equation. Which is called \textit{It\^o integral}.
 
 ## Ito Integral
+
 Recall the way we solve ordinary differential equation, we can use the following method to solve stochastic differential equation.
 
 Let $$f(x, t)$$ be a second order differentiable function, we can calculate the Taylor expansion of it as:
@@ -171,13 +179,14 @@ Let $$f(x, t)$$ be a second order differentiable function, we can calculate the 
 $$
 	\mathrm{d} f = \dfrac{\partial f}{\partial x} \mathrm{d} x + \dfrac{\partial f}{\partial t} \mathrm{d} t + \dfrac{1}{2} \dfrac{\partial^2 f}{\partial x^2} \mathrm{d} x^2 + \dfrac{1}{2} \dfrac{\partial^2 f}{\partial t^2} \mathrm{d} t^2 + \dfrac{\partial^2 f}{\partial x \partial t} \mathrm{d} x \mathrm{d} t
 $$
+
 substitute $$\mathrm dx$$ with $$\mathrm{d}X_t = \mu\left(t, X_t\right) \mathrm{d} t + \sigma\left(t, X_t\right)\mathrm{d}W_t$$, recall that $$\left(\mathrm{d}W_t\right)^2 = \mathrm{d}t$$ (magic happens here), ignore the high-order term, we get
 
 $$
 	\mathrm{d} f = \left(\dfrac{\partial f}{\partial t} + \mu\left(t, X_t\right)\dfrac{\partial f}{\partial x} + \dfrac{\sigma\left(t, X_t\right)^2}{2}\dfrac{\partial^2 f}{\partial x^2}\right) \mathrm{d}t + \sigma\left(t, X_t\right)\dfrac{\partial f}{\partial x} \mathrm{d}W_t
 $$
 
-The equation above is called *Ito's lemma* . It is the key to solve stochastic differential equation.
+The equation above is called _Ito's lemma_ . It is the key to solve stochastic differential equation.
 
 Consider $$X_t = W_t^2$$, we use Ito's lemma to calculate $$\mathrm{d}X_t$$.
 
@@ -193,7 +202,9 @@ compared to normal differentiation, we have an extra term $$\mathrm{d}t$$ term h
 
 $$
 		\int_0^t W_s\mathrm{d}W_s  = \dfrac{1}{2}W_t^2 - \dfrac{1}{2}t
-	$$
+
+
+$$
 
 when we reverse the process.
 
@@ -205,13 +216,15 @@ $$
 		\mathrm{d}f = f^\prime(X_t) \mathrm{d}X_t + \dfrac{1}{2} \ f^{\prime\prime}(X_t) \mathrm{d}t
 $$
 
+### Example: Geometric Brownian Motion (GBM)
 
-### Example: Geometric Brownian Motion (GBM)	
 Geometric Brownian Motion is used to model the stock price. It is defined as
 
 $$
 		\mathrm{d}S_t = \mu S_t \mathrm{d}t + \sigma S_t \mathrm{d}W_t
-	$$
+
+
+$$
 
 In order to solve it, take logarithm transformation, i.e. $$\log S_t$$, then by It\^o's lemma,
 
