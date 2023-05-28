@@ -131,9 +131,9 @@ _Brownian motion_ or _Wiener process_ is a model of continuous random process. L
 
 There are three major assumptions about $$B_t$$
 
-1. \textbf{Stationary increments.} If $$s < t$$, then the distribution of $$B_t - B_s$$ is identical to the distribution of $$B_{t-s}$$,
-2. \textbf{Independent increments.} If $$s < t$$, then the random variable $$B_t - B_s$$ is independent of $$B_r$$ if $$r < s$$,
-3. \textbf{Continuous path.} The function $$t\mapsto B_t$$ is continuous (i.e. H\"older continuous with exponent equals $$1/ 2$$ ).
+1. **Stationary increments**. $$s < t$$, then the distribution of $$B_t - B_s$$ is identical to the distribution of $$B_{t-s}$$,
+2. **Independent increments**. If $$s < t$$, then the random variable $$B_t - B_s$$ is independent of $$B_r$$ if $$r < s$$,
+3. **Continuous path**. The function $$t\mapsto B_t$$ is continuous (i.e. H\"older continuous with exponent equals $$1/ 2$$ ).
 
 For convenience, we often set $$B_0 = 0$$.
 
@@ -164,6 +164,7 @@ Let $$X_t$$ be a stochastic process, $$X_t$$ is called an _Ito process_ if it sa
 
 $$
 		\mathrm{d} X_t = \underbrace{\mu\left(t, X_t\right) \mathrm{d} t}_{\text{drifting term}} + \underbrace{\sigma\left(t, X_t\right) \mathrm{d} W_t}_{\text{diffusion term}}
+
 
 $$
 
