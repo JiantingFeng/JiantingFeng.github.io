@@ -1,5 +1,5 @@
 ---
-title: Maximum Mean Discrepancy and Reproduce Hilbert Space
+title: Maximum Mean Discrepancy and Reproduce Kernel Hilbert Space
 layout: post
 date: '2023-05-14'
 description: Introduction of Maximum Mean Discrepancy

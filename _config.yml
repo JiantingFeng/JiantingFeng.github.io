@@ -213,6 +213,11 @@ plugins:
 # Sitemap settings
 defaults:
   - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+  - scope:
       path: "assets/**/*.*"
     values:
       sitemap: false
