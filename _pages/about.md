@@ -18,7 +18,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-Hi, I'm Feng Jianting (Chinese: 冯建霆), a postgraduate student at CUHK starting in the fall of 2023, my current supervisor is [Prof.DAI Ben](https://bendai.org)
+Hi, I'm Feng Jianting (Chinese: 冯建霆), a postgraduate student at CUHK starting in the fall of 2023, my thesis supervisor is [Prof.DAI Ben](https://bendai.org)
 
 I obtained my undergraduate degree from the **Beijing Institute of Technology**, where I majored in Mathematics and was supervised by [Prof. Man Hongyin](https://math.bit.edu.cn/szdw/jgml/jsyxtkxx/mhy/index.htm).
 
