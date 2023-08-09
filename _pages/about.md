@@ -7,11 +7,11 @@ subtitle: Ph.D. student in <a href='https://www.sta.cuhk.edu.hk/'>Department of 
 profile:
   align: right
   image: pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   address: >
-    <p>141, Lady Shaw Building</p>
+    <p>RM 141, LSB</p>
     <p>The Chinese University of Hong Kong</p>
-    <p>NT, HongKong</p>
+    <p>NT, Hong Kong</p>
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
