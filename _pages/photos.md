@@ -21,20 +21,30 @@ nav_order: 4
   </div>
   -->
   <div class="gallery-item">
-    <img src="/assets/img/photos/latte_art_mania.jpg" alt="Latte art mania@Tokyo">
+    <img src="https://img-bkt-a.s3.ap-northeast-1.amazonaws.com/latte-art-tokyo.jpg" alt="Latte art mania@Tokyo">
     <div class="gallery-caption">
       <h3>Latte Art Mania</h3>
       <p>東京都港区北青山2-9-13</p>
     </div>
   </div>
   
+
   <div class="gallery-item">
-    <img src="/assets/img/photos/corgi.jpg" alt="CUHK Campus">
+    <img src="https://img-bkt-a.s3.ap-northeast-1.amazonaws.com/DSC01203.JPG" alt="Meiji Jingu">
     <div class="gallery-caption">
-      <h3>Corgi</h3>
-      <!-- <p>The Chinese University of Hong Kong</p> -->
+      <h3>Meiji Jingu</h3>
+      <p>Shibuya, Tokyo</p>
     </div>
   </div>
+
+  <div class="gallery-item">
+    <img src="https://img-bkt-a.s3.ap-northeast-1.amazonaws.com/DSC01082.JPG" alt="Enoshima">
+    <div class="gallery-caption">
+      <h3>Enoshima</h3>
+      <p>Kamakura, Japan</p>
+    </div>
+  </div>
+  
   
 
 <!-- ## Travel Memories
